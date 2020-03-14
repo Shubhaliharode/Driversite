@@ -1,0 +1,10 @@
+visit https://www.youtube.com/watch?v=3Hkq_RGR7A4
+npm i hammerjs
+then copy bootstrap code from https://getbootstrap.com/docs/4.4/components/navbar/#responsive-behaviors to heade.component.html
+then in hedear.comp.html add  (click)="toggleNavbar()" in !st button here--->
+    <button class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#navbarTogglerDemo01"
+as like 
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+
+then add [ngClass] after colsing above button then within div add ngclass as-->    <div class="collapse navbar-collapse" id="navbarTogglerDemo01" [ngClass]="{'show':navbarOpen}">
+footer-->https://mdbootstrap.com/snippets/jquery/temp/1864399?action=prism_export copy and paste inn footer.comp.html

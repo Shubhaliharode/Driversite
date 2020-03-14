@@ -1,0 +1,11 @@
+.imgs{
+    width:150px;
+    height:50px;
+}
+.bg-light {
+    background-color: #6c757d !important;
+}
+a{
+    font-size: 30px;
+    font-display:auto;
+}

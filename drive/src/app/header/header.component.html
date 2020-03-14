@@ -1,0 +1,54 @@
+<div class="navbar navbar-expand-lg navbar-light bg-light">
+  <button
+    class="navbar-toggler"
+    type="button"
+    (click)="toggleNavbar()"
+    data-toggle="collapse"
+    data-target="#navbarTogglerDemo01"
+    aria-controls="navbarTogglerDemo01"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div
+    class="collapse navbar-collapse"
+    id="navbarTogglerDemo01"
+    [ngClass]="{ show: navbarOpen }"
+  >
+    <img
+      class="imgs"
+      src="../../assets/images/29ffe355-1b20-493d-a867-330a9cd84655_200x200.png"
+    />
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="'home'"
+          >Home <span class="sr-only">(current)</span></a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="'signin'">SignIn</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " [routerLink]="'/signup'">SignUp</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " [routerLink]="'about'">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " [routerLink]="'contact'">Contact</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input
+        class="form-control mr-sm-2"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+        Search
+      </button>
+    </form>
+  </div>
+</div>

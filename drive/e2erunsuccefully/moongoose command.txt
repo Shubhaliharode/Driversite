@@ -1,0 +1,6 @@
+mongodb commond::::::::::::::::::::::
+1) cd C:\Program Files\MongoDB\Server\4.2\bin
+2)mongod(type press enter)
+
+3)(new cmd)cd C:\Program Files\MongoDB\Server\4.2\bin
+ then enter  then type mongo(press enter)

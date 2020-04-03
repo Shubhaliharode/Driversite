@@ -12,7 +12,6 @@ export class SignUpComponent implements OnInit {
   emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   showSucessMessage: boolean;
   serverErrorMessages: string;
-
   constructor(public userService: UserService) {}
 
   ngOnInit() {}
@@ -39,10 +38,10 @@ export class SignUpComponent implements OnInit {
       lastName: "",
       email: "",
       password: "",
-      pincode:undefined,
-      city:"",
-      address:"",
-      mob_no:undefined,
+      pincode: undefined,
+      city: "",
+      address: "",
+      mob_no: undefined
     };
     form.resetForm();
     this.serverErrorMessages = "";

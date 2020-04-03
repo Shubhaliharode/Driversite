@@ -6,8 +6,7 @@ import { UserService } from "../../shared/user.service";
 @Component({
   selector: "app-sign-up",
   templateUrl: "./sign-up.component.html",
-  styleUrls: ["./sign-up.component.css"],
-  providers: [UserService]
+  styleUrls: ["./sign-up.component.css"]
 })
 export class SignUpComponent implements OnInit {
   emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -37,8 +36,13 @@ export class SignUpComponent implements OnInit {
   resetForm(form: NgForm) {
     this.userService.selectedUser = {
       fullName: "",
+      lastName: "",
       email: "",
-      password: ""
+      password: "",
+      pincode:undefined,
+      city:"",
+      address:"",
+      mob_no:undefined,
     };
     form.resetForm();
     this.serverErrorMessages = "";
